@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bin2Dec</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="./bin2dec.html">Bin2Dec</a></li>
+            <li><a href="./dec2bin.html">Dec2Bin</a></li>
+        </ul>
+    </nav>
+    <h1>Binary to Decimal Converter</h1>
+    <p>Please enter a binary number with a max of 8 digits and that will be converted to a decimal number</p>
+    <p>Example: 1110 => 14</p>
+    <form>
+        <label for="binary">Enter the number in Binary</label>
+        <input type="number" id="binary" name="binary" min="1" max="11111111">
+        <button id="convert" type="submit">Convert</button>
+        <span id="decimal"></span>
+        <span id="message"></span>
+    </form>
+    <script src="./bin2dec.js"></script>
+</body>
+</html>
