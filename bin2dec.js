@@ -16,7 +16,7 @@ btnConvert.addEventListener('click', (event) => {
         error = true
         return;
     }
-    if(binary.split('').length > 8){
+    if(binary.split('').length > 8) {
         spanDecimal.textContent = ''
         spanMessage.textContent = 'The maximum digits is 8'
         error = true
@@ -30,11 +30,9 @@ btnConvert.addEventListener('click', (event) => {
             return;
         }
     })
-    if(error === false){
+    if(error === false) {
         const decimal = parseInt(binary, 2)
         spanDecimal.textContent = decimal
         binaryInput.value = ''
     }
 })
-
-console.log()
