@@ -28,6 +28,7 @@ btnConvert.addEventListener('click', (event) => {
         if( digit !== '0' && digit !== '1') {
             spanDecimal.textContent = ''
             spanMessage.textContent = 'Enter a binary number'
+            spanMessage.style.color = 'red'
             error = true
             return;
         }
