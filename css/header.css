@@ -1,0 +1,33 @@
+header {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 150px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2rem;
+}
+
+nav li {
+    display: block;
+    list-style: none;
+    padding: 1rem;
+    width: 50%;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.active {
+    background-color: rgb(161, 0, 0);
+}
+
+.active a {
+    color: #ccc;
+}

@@ -1,6 +1,6 @@
 const binaryInput = document.querySelector('#binary')
 const btnConvert = document.querySelector('#convert')
-const spanDecimal = document.querySelector('#decimal')
+const spanDecimal = document.querySelector('#result')
 const spanMessage = document.querySelector('#message')
 
 
@@ -13,12 +13,14 @@ btnConvert.addEventListener('click', (event) => {
     if(binary === '') {
         spanDecimal.textContent = ''
         spanMessage.textContent = 'Input empty'
+        spanMessage.style.color = 'red'
         error = true
         return;
     }
     if(binary.split('').length > 8) {
         spanDecimal.textContent = ''
         spanMessage.textContent = 'The maximum digits is 8'
+        spanMessage.style.color = 'red'
         error = true
         return;
     }
@@ -32,7 +34,8 @@ btnConvert.addEventListener('click', (event) => {
     })
     if(error === false) {
         const decimal = parseInt(binary, 2)
-        spanDecimal.textContent = decimal
+        spanDecimal.textContent = `Result: ${decimal}`
+        spanDecimal.style.color = 'green'
         binaryInput.value = ''
     }
 })

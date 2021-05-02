@@ -1,6 +1,6 @@
 const decimalInput = document.querySelector('#decimal')
 const btnConvert = document.querySelector('#convert')
-const spanDecimal = document.querySelector('#binary')
+const spanDecimal = document.querySelector('#result')
 const spanMessage = document.querySelector('#message')
 
 
@@ -30,7 +30,7 @@ btnConvert.addEventListener('click', (event) => {
     }
     if(error === false) {
         const binary = parseInt(decimal).toString(2)
-        spanDecimal.textContent = binary
+        spanDecimal.textContent = `Result: ${binary}`
         decimalInput.value = ''
     }
 })
