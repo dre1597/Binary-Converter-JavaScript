@@ -21,6 +21,7 @@ btnConvert.addEventListener('click', (event) => {
         spanDecimal.textContent = ''
         spanMessage.textContent = 'The maximum digits is 8'
         spanMessage.style.color = 'red'
+        binaryInput.value = ''
         error = true
         return;
     }
@@ -29,13 +30,15 @@ btnConvert.addEventListener('click', (event) => {
             spanDecimal.textContent = ''
             spanMessage.textContent = 'Enter a binary number'
             spanMessage.style.color = 'red'
+            binaryInput.value = ''
             error = true
             return;
         }
     })
     if(error === false) {
         const decimal = parseInt(binary, 2)
-        spanDecimal.textContent = `Result: ${decimal}`
+        binaryInput.value = ''
+        spanDecimal.textContent = `Binary: ${binary} | Decimal: ${decimal}`
         spanDecimal.style.color = 'green'
         binaryInput.value = ''
     }

@@ -21,6 +21,7 @@ btnConvert.addEventListener('click', (event) => {
         spanDecimal.textContent = ''
         spanMessage.textContent = 'Enter a positive number'
         spanMessage.style.color = 'red'
+        decimalInput.value = ''
         error = true
         return;
     }
@@ -28,12 +29,13 @@ btnConvert.addEventListener('click', (event) => {
         spanDecimal.textContent = ''
         spanMessage.textContent = 'The maximum decimal is 255'
         spanMessage.style.color = 'red'
+        decimalInput.value = ''
         error = true
         return;
     }
     if(error === false) {
         const binary = parseInt(decimal).toString(2)
-        spanDecimal.textContent = `Result: ${binary}`
+        spanDecimal.textContent = `Decimal: ${decimal} | Binary: ${binary}`
         spanDecimal.style.color = 'green'
         decimalInput.value = ''
     }
