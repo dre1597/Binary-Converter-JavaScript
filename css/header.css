@@ -17,9 +17,16 @@ nav li {
     list-style: none;
     padding: 1rem;
     width: 50%;
+    cursor: pointer;
+    transition: .5s background linear;
+}
+
+nav li:hover {
+    background-color: rgb(161, 0, 0, .7);
 }
 
 nav a {
+    display: block;
     text-decoration: none;
     color: black;
 }

@@ -33,6 +33,14 @@ btnConvert.addEventListener('click', (event) => {
         error = true
         return;
     }
+    if(decimal.includes('.')) {
+        spanDecimal.textContent = ''
+        spanMessage.textContent = 'Please enter a integer'
+        spanMessage.style.color = 'red'
+        decimalInput.value = ''
+        error = true
+        return;
+    }
     if(error === false) {
         const binary = parseInt(decimal).toString(2)
         spanDecimal.textContent = `Decimal: ${decimal} | Binary: ${binary}`
