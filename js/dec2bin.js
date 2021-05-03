@@ -17,25 +17,9 @@ btnConvert.addEventListener('click', (event) => {
         error = true
         return;
     }
-    if(decimal < 0) {
+    if(decimal < 0 || decimal > 255 || decimal.includes('.') || decimal.includes('e') || decimal.includes('E')) {
         spanDecimal.textContent = ''
-        spanMessage.textContent = 'Enter a positive number'
-        spanMessage.style.color = 'red'
-        decimalInput.value = ''
-        error = true
-        return;
-    }
-    if(decimal > 255) {
-        spanDecimal.textContent = ''
-        spanMessage.textContent = 'The maximum decimal is 255'
-        spanMessage.style.color = 'red'
-        decimalInput.value = ''
-        error = true
-        return;
-    }
-    if(decimal.includes('.')) {
-        spanDecimal.textContent = ''
-        spanMessage.textContent = 'Please enter a integer'
+        spanMessage.textContent = 'Please enter a integer between 1 and 225'
         spanMessage.style.color = 'red'
         decimalInput.value = ''
         error = true
