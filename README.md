@@ -1,6 +1,6 @@
 # Converter Binary to Decimal and Decimal to Binary using JavaScript
 
-## Technlogies
+## Technologies
 
 - HTML
 - CSS
