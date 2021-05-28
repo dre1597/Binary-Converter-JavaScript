@@ -1,10 +1,14 @@
 # Converter Binary to Decimal and Decimal to Binary using JavaScript
 
-## Technlogies
+## About
 
-- HTML
-- CSS
-- JavaScript
+There is 2 pages, one for binary to decimal and one for decimal to binary. Watch out for the limits on subtitle.
+
+## Technologies
+
+-   HTML
+-   CSS
+-   JavaScript
 
 See more projects like this on [app-ideas](https://github.com/florinpop17/app-ideas)
 
