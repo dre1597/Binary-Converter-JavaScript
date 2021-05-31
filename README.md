@@ -10,7 +10,7 @@ There is 2 pages, one for binary to decimal and one for decimal to binary. Watch
 -   CSS
 -   JavaScript
 
-You can see this project working [right here](https://dre1597.github.io/binary-converter/index.html)
+You can see this project working [right here](https://dre1597.github.io/Binary-Converter-JavaScript/)
 
 See more projects like this on [app-ideas](https://github.com/florinpop17/app-ideas)
 
