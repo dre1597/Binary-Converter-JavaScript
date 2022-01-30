@@ -6,9 +6,9 @@ There is 2 pages, one for binary to decimal and one for decimal to binary. Watch
 
 ## Technologies
 
--   HTML
--   CSS
--   JavaScript
+- HTML
+- CSS
+- JavaScript
 
 You can see this project working [right here](https://dre1597.github.io/Binary-Converter-JavaScript/)
 

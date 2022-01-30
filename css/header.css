@@ -1,40 +1,40 @@
 header {
-    max-width: 700px;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 150px;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 150px;
 }
 
 nav ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2rem;
 }
 
 nav li {
-    display: block;
-    list-style: none;
-    padding: 1rem;
-    width: 50%;
-    cursor: pointer;
-    transition: .5s background linear;
+  display: block;
+  list-style: none;
+  padding: 1rem;
+  width: 50%;
+  cursor: pointer;
+  transition: 0.5s background linear;
 }
 
 nav li:hover {
-    background-color: rgb(161, 0, 0, .7);
+  background-color: rgb(161, 0, 0, 0.7);
 }
 
 nav a {
-    display: block;
-    text-decoration: none;
-    color: black;
+  display: block;
+  text-decoration: none;
+  color: black;
 }
 
 .active {
-    background-color: rgb(161, 0, 0);
+  background-color: rgb(161, 0, 0);
 }
 
 .active a {
-    color: #ccc;
+  color: #ccc;
 }
